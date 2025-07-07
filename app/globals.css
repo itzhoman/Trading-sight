@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --electricBlue: #00BFFF;
+  --deepBlue: #003366;
+  --slateBlue: #4A90E2;
+  --skyBlue: #87CEEB;
+  --neonCyan: #00FFFF;
+  --profitGreen: #00FF94;
+  --lossRed: #FF4D4D;
+  --silver: #C0C0C0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
