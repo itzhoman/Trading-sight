@@ -1,8 +1,9 @@
+import Navbar from "./navbar/page";
 
 export default function Home() {
   return (
-   <div className="bg-amber-600">
-   dfsadfas dfasdfasdsd
+   <div >
+    <Navbar/>
    </div>
   );
 }
