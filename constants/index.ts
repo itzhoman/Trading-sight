@@ -2,26 +2,26 @@ export const NavbarItems = [
   {
     id: 1,
     title: "Markets",
-    link: "/markets",
+    link: "#",
   },
   {
     id: 2,
     title: "Trade",
-    link: "/trade",
+    link: "#",
   },
   {
     id: 3,
     title: "Portfolio",
-    link: "/portfolio",
+    link: "#",
   },
   {
     id: 4,
     title: "News",
-    link: "/news",
+    link: "#",
   },
   {
     id: 5,
     title: "Account",
-    link: "/account",
+    link: "#",
   },
 ];

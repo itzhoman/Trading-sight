@@ -16,7 +16,7 @@ const Navbar = () => {
             {item.title}
           </a>
         ))}
-        <Button size='sm'  variant='outline'>sign up</Button>
+        <Button size='sm'  variant='outline' className="hover:text-white">sign up</Button>
       </div>
     </div>
   );
