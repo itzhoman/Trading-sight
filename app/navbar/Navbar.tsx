@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <div className=" flex items-center justify-between px-12 sticky bg-fourth h-[70px]">
+    <div className=" flex items-center justify-between px-12 sticky bg-fourth h-[70px] border-b-white border-b-1" >
       <div>
         <Image src={TradingSight} alt="" width={100} height={200}  />
       </div>
