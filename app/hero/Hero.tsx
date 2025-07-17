@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <div className="flex justify-between px-10 py-20">
-      <div className="text-third flex flex-col gap-6 mt-36 ml-6">
+      <div className="text-third flex flex-col gap-6 mt-44 ml-12">
         <h1 className="text-xl font-extrabold">Track Stocks Anywhere with Real-Time Insights</h1>
         <p className="w-[450px] text-lg font-bold ml-1.5">
           Stay ahead of the market with our intuitive mobile stock dashboard.
@@ -14,8 +14,8 @@ const Hero = () => {
           hand
         </p>
         <div className="flex gap-4">
-            <Button  variant="secondary" className="hover:bg-none">Explore</Button>
-            <Button variant='ghost'>Analyze</Button>
+            <Button  variant="secondary" className="">Explore</Button>
+            <Button variant='outline' className="text-black hover:text-third bg-none">Analyze</Button>
         </div>
       </div>
       <Image alt="stock market" src={phone} width={350} height={150} />
