@@ -1,4 +1,4 @@
-import Charts from "./chrts/Charts";
+import Charts from "./chrts/ChartSection";
 import Hero from "./hero/Hero";
 import Navbar from "./navbar/Navbar";
 
