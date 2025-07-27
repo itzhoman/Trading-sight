@@ -29,11 +29,11 @@ const chartData = [
 const chartConfig = {
   btc: {
     label: "Bitcoin (BTC)",
-    color: "#2c3e50", 
+    color: "#8F8F8F", 
   },
   eth: {
     label: "Ethereum (ETH)",
-    color: "#95a5a6", 
+    color: "#000000", 
   },
 } satisfies ChartConfig
 
@@ -61,13 +61,13 @@ export function ToolChart() {
             <Bar
               dataKey="btc"
               stackId="a"
-              fill="#2c3e50"
+              fill="#000000"
               radius={[0, 0, 4, 4]}
             />
             <Bar
               dataKey="eth"
               stackId="a"
-              fill="#95a5a6"
+              fill="#8F8F8F"
               radius={[4, 4, 0, 0]}
             />
             <ChartTooltip
