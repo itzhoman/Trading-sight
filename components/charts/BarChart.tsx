@@ -27,7 +27,7 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Value",
-    color: "fourth",
+    color: "fifth",
   },
 } satisfies ChartConfig
 
@@ -39,7 +39,7 @@ export function BarCharts() {
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
-          <BarChart accessibilityLayer data={chartData}>
+          <BarChart accessibilityLayer data={chartData} >
             <CartesianGrid vertical={false} />
             <XAxis
               dataKey="month"
@@ -52,11 +52,10 @@ export function BarCharts() {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={8} />
+            <Bar dataKey="desktop"  radius={15} />
           </BarChart>
         </ChartContainer>
       </CardContent>
-  
     </Card>
   )
 }

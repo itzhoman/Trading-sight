@@ -14,7 +14,7 @@ const Hero = () => {
           hand
         </p>
         <div className="flex gap-4">
-            <Button  variant="secondary" className="">Explore</Button>
+            <Button  variant="secondary" className="bg-fifth text-white hover:text-parimary hover:duration-500 ">Explore</Button>
             <Button variant='outline' className="text-black hover:text-third bg-none">Analyze</Button>
         </div>
       </div>
