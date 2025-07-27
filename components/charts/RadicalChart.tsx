@@ -9,7 +9,6 @@ import {
   CardHeader,
 } from "@/components/ui/card"
 import {
-  ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
@@ -18,11 +17,10 @@ import {
 export const description = "A radial chart with a grid"
 
 const chartData = [
-  { browser: "Commodities", traders: 275, fill: "#000000" },
-  { browser: "Stocks", traders: 200, fill: "#404040" },
-  { browser: "Crypto", traders: 287, fill: "#808080" },
-  { browser: "ETFs", traders: 173, fill: "#BFBFBF" },
-  { browser: "Forex", traders: 190, fill: "#BFbcBF" },
+  { browser: "Commodities", traders: 275, fill: "#000000" }, 
+  { browser: "Stocks", traders: 200, fill: "#202020" },      
+  { browser: "ETFs", traders: 173, fill: "#8F8F8F" },       
+  { browser: "Forex", traders: 190, fill: "#8F8C8F" },     
 ];
 
 const chartConfig = {
@@ -31,25 +29,25 @@ const chartConfig = {
   },
   chrome: {
     label: "Stocks",
-    color: "#000000",
+    color: "#202020", 
   },
   safari: {
     label: "Crypto",
-    color: "#404040",
+    color: "#505050",  
   },
   firefox: {
     label: "ETFs",
-    color: "#808080",
+    color: "#8F8F8F", 
   },
   edge: {
     label: "Forex",
-    color: "#BFBFBF",
+    color: "#8F8C8F",  
   },
   other: {
     label: "Commodities",
-    color: "#BFbcBF",
+    color: "#000000",  
   },
-} satisfies ChartConfig;
+}; 
 
 export function RadiCalChart() {
   return (
