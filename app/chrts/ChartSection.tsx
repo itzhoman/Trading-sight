@@ -3,15 +3,14 @@ import { Piechart } from "@/components/charts/PieChart";
 
 const Charts = () => {
   return (
-    <div className="grid grid-cols-2 gap-10 px-14 py-10">
-      <div>
-        <Piechart/>
+    <div className="grid grid-cols-2 gap-4 px-14 py-10 place-items-center">
+      {/* Both charts have same width and height */}
+      <div className="w-full max-w-[700px] h-[360px]">
+        <Piechart />
       </div>
-      <div>
+      <div className="w-full max-w-[700px] h-[360px]">
         <BarCharts />
       </div>
-      <div></div>
-      <div></div>
     </div>
   );
 };

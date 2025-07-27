@@ -33,13 +33,18 @@ const chartConfig = {
 
 export function BarCharts() {
   return (
-    <Card>
+    <Card className="">
       <CardHeader>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
-          <BarChart accessibilityLayer data={chartData} >
+      <CardContent className="">
+        <ChartContainer config={chartConfig} className="h-full">
+          <BarChart
+            accessibilityLayer
+            data={chartData}
+            width={350}
+            height={250}
+          >
             <CartesianGrid vertical={false} />
             <XAxis
               dataKey="month"
@@ -52,7 +57,7 @@ export function BarCharts() {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
             />
-            <Bar dataKey="desktop"  radius={15} />
+            <Bar dataKey="desktop" radius={15} />
           </BarChart>
         </ChartContainer>
       </CardContent>
