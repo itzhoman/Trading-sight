@@ -13,7 +13,7 @@ export function Futures() {
       opts={{
         align: "start",
       }}
-      className="w-full  px-8 py-10"
+      className="w-full mt-20 px-8 py-10"
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
@@ -28,7 +28,6 @@ export function Futures() {
           </CarouselItem>
         ))}
       </CarouselContent>
- 
     </Carousel>
   )
 }
