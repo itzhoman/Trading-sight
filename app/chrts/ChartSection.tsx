@@ -5,7 +5,7 @@ import { ToolChart } from "@/components/charts/ToolChart";
 
 const Charts = () => {
   return (
-    <div className="grid grid-cols-2 gap-8 px-14 py-10 place-items-center">
+    <div className="grid grid-cols-2 gap-8 px-14 py-10 mt-10 place-items-center">
       <div className="w-full max-w-[700px] h-[360px]">
         <Piechart />
       </div>
