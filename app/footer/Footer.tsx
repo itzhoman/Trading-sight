@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-10 mt-25 relative z-10">
         {/* Brand Section */}
         <div className="sm:col-span-1 flex flex-col items-center sm:items-start">
-          <div className="mb-4 text-xl font-extrabold tracking-widest hover:text-[#ec4899] transition-colors duration-300">
+          <div className="mb-4 text-xl font-extrabold tracking-widest hover:text-[#A4A4A4] transition-colors duration-300">
             <a href="https://www.linkedin.com/in/itzhoman">Homan Hajimohamadi</a>
           </div>
           <p className="font-bold text-lg">&copy; 2025 Game Arena</p>
@@ -59,7 +59,7 @@ const Footer = () => {
               <li key={link.key} className="mb-2">
                 <a
                   href={link.url}
-                  className="font-bold text-lg hover:text-[#ec4899] transition-colors duration-300"
+                  className="font-bold text-lg hover:text-[#A4A4A4] transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li key={link.key} className="mb-2">
                 <a
                   href={link.url}
-                  className="font-bold text-lg hover:text-[#ec4899] transition-colors duration-300"
+                  className="font-bold text-lg hover:text-[#A4A4A4] transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -93,7 +93,7 @@ const Footer = () => {
               <li key={link.key}>
                 <a
                   href={link.url}
-                  className="flex items-center gap-3 font-bold text-lg hover:text-[#ec4899] transition-colors duration-300"
+                  className="flex items-center gap-3 font-bold text-lg hover:text-[#A4A4A4] transition-colors duration-300"
                 >
                   {link.icon} {link.label}
                 </a>
