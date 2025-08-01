@@ -26,36 +26,29 @@ export const NavbarItems = [
   },
 ];
 
-
 export const TopPerformingStocksData = [
     {
-        title: 'Moue: The Silent Click That Wins Games',
-        // img: headset,
-        des: 'Why the right mouse click can be the difference between victory and defeat—exploring gaming’s tiniest power move',
+        title: 'TechGrowth Inc: Leading the Market Rally',
+        des: 'A look at how this tech giant continues to outperform sector benchmarks amid economic uncertainty.',
     },
     {
-        title: 'Coolpad: Ice-Cold Keyboards for Hot Gaming Sessions',
-        // img: headset2,
-        des: 'Stay frosty with the sleekest, most responsive keyboards built to keep up with your fastest plays',
+        title: 'GreenEnergy Solutions: Sustainable Gains',
+        des: 'Renewable energy stocks surge as global demand for clean technology reaches new highs.',
     },
     {
-        title: 'FlickShot: The Art of Lightning Reflexes',
-        // img: headset3,
-        des: 'How pro gamers train their instincts to hit impossible shots—breakdowns, tips, and legendary flick moments',
+        title: 'HealthVantage Corp: Defensive Stock Strength',
+        des: 'Why healthcare stocks remain resilient even during market downturns.',
     },
     {
-        title: 'GlitchCraft: Turning Bugs Into Brilliance',
-        // img: headset4,
-        des: 'Some of gaming’s greatest moments come from broken code. Here’s how glitches became legendary strategies',
+        title: 'GlobalBank Ltd: Interest Rate Windfall',
+        des: 'How rising interest rates are boosting profitability for financial sector leaders.',
     },
     {
-        title: 'NoScope: Confidence (or Chaos) in Gaming',
-        // img: headset5,
-        des: 'The psychology behind those wild, no-scope shots—why players go for the flashy play instead of the safe win.',
+        title: 'AutoInnovate Motors: EV Boom Continues',
+        des: 'Electric vehicle stocks accelerate as consumer adoption outpaces expectations.',
     },
     {
-        title: 'PixelRush: When Retro Meets Hyper-Speed Gaming',
-        // img: headset6,
-        des: 'How old-school pixel art games are getting a speedrunning revolution. Can you keep up?',
+        title: 'RetailMasters Group: Consumer Spending Surge',
+        des: 'Retail stocks thrive as holiday sales projections break records.',
     }
-]
+];

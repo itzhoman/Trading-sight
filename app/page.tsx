@@ -1,3 +1,4 @@
+import { ChartArea } from "@/components/charts/ChartAerea";
 import Charts from "./chrts/ChartSection";
 import { Futures } from "./furures/Futures";
 import Hero from "./hero/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <Charts />
       <Futures/>
       <TopPerformingStocks/>
+      <ChartArea/>
     </>
   );
 }
