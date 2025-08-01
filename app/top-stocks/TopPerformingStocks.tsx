@@ -4,7 +4,7 @@ import { TopPerformingStocksData } from '@/constants'
 
 const TopPerformingStocks: React.FC = () => {
     return (
-        <div className='relative w-full bg-gradient-background text-[var(--color-text-primary)] overflow-hidden'>
+        <div className='mt-24 relative w-full bg-gradient-background text-[var(--color-text-primary)] overflow-hidden'>
 
             {/* Background decorative elements */}
             <div className='absolute top-0 left-0 w-full h-full'>

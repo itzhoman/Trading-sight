@@ -22,110 +22,110 @@ import {
 export const description = "An interactive area chart"
 
 const chartData = [
-  { date: "2024-04-01", desktop: 222, mobile: 150 },
-  { date: "2024-04-02", desktop: 97, mobile: 180 },
-  { date: "2024-04-03", desktop: 167, mobile: 120 },
-  { date: "2024-04-04", desktop: 242, mobile: 260 },
-  { date: "2024-04-05", desktop: 373, mobile: 290 },
-  { date: "2024-04-06", desktop: 301, mobile: 340 },
-  { date: "2024-04-07", desktop: 245, mobile: 180 },
-  { date: "2024-04-08", desktop: 409, mobile: 320 },
-  { date: "2024-04-09", desktop: 59, mobile: 110 },
-  { date: "2024-04-10", desktop: 261, mobile: 190 },
-  { date: "2024-04-11", desktop: 327, mobile: 350 },
-  { date: "2024-04-12", desktop: 292, mobile: 210 },
-  { date: "2024-04-13", desktop: 342, mobile: 380 },
-  { date: "2024-04-14", desktop: 137, mobile: 220 },
-  { date: "2024-04-15", desktop: 120, mobile: 170 },
-  { date: "2024-04-16", desktop: 138, mobile: 190 },
-  { date: "2024-04-17", desktop: 446, mobile: 360 },
-  { date: "2024-04-18", desktop: 364, mobile: 410 },
-  { date: "2024-04-19", desktop: 243, mobile: 180 },
-  { date: "2024-04-20", desktop: 89, mobile: 150 },
-  { date: "2024-04-21", desktop: 137, mobile: 200 },
-  { date: "2024-04-22", desktop: 224, mobile: 170 },
-  { date: "2024-04-23", desktop: 138, mobile: 230 },
-  { date: "2024-04-24", desktop: 387, mobile: 290 },
-  { date: "2024-04-25", desktop: 215, mobile: 250 },
-  { date: "2024-04-26", desktop: 75, mobile: 130 },
-  { date: "2024-04-27", desktop: 383, mobile: 420 },
-  { date: "2024-04-28", desktop: 122, mobile: 180 },
-  { date: "2024-04-29", desktop: 315, mobile: 240 },
-  { date: "2024-04-30", desktop: 454, mobile: 380 },
-  { date: "2024-05-01", desktop: 165, mobile: 220 },
-  { date: "2024-05-02", desktop: 293, mobile: 310 },
-  { date: "2024-05-03", desktop: 247, mobile: 190 },
-  { date: "2024-05-04", desktop: 385, mobile: 420 },
-  { date: "2024-05-05", desktop: 481, mobile: 390 },
-  { date: "2024-05-06", desktop: 498, mobile: 520 },
-  { date: "2024-05-07", desktop: 388, mobile: 300 },
-  { date: "2024-05-08", desktop: 149, mobile: 210 },
-  { date: "2024-05-09", desktop: 227, mobile: 180 },
-  { date: "2024-05-10", desktop: 293, mobile: 330 },
-  { date: "2024-05-11", desktop: 335, mobile: 270 },
-  { date: "2024-05-12", desktop: 197, mobile: 240 },
-  { date: "2024-05-13", desktop: 197, mobile: 160 },
-  { date: "2024-05-14", desktop: 448, mobile: 490 },
-  { date: "2024-05-15", desktop: 473, mobile: 380 },
-  { date: "2024-05-16", desktop: 338, mobile: 400 },
-  { date: "2024-05-17", desktop: 499, mobile: 420 },
-  { date: "2024-05-18", desktop: 315, mobile: 350 },
-  { date: "2024-05-19", desktop: 235, mobile: 180 },
-  { date: "2024-05-20", desktop: 177, mobile: 230 },
-  { date: "2024-05-21", desktop: 82, mobile: 140 },
-  { date: "2024-05-22", desktop: 81, mobile: 120 },
-  { date: "2024-05-23", desktop: 252, mobile: 290 },
-  { date: "2024-05-24", desktop: 294, mobile: 220 },
-  { date: "2024-05-25", desktop: 201, mobile: 250 },
-  { date: "2024-05-26", desktop: 213, mobile: 170 },
-  { date: "2024-05-27", desktop: 420, mobile: 460 },
-  { date: "2024-05-28", desktop: 233, mobile: 190 },
-  { date: "2024-05-29", desktop: 78, mobile: 130 },
-  { date: "2024-05-30", desktop: 340, mobile: 280 },
-  { date: "2024-05-31", desktop: 178, mobile: 230 },
-  { date: "2024-06-01", desktop: 178, mobile: 200 },
-  { date: "2024-06-02", desktop: 470, mobile: 410 },
-  { date: "2024-06-03", desktop: 103, mobile: 160 },
-  { date: "2024-06-04", desktop: 439, mobile: 380 },
-  { date: "2024-06-05", desktop: 88, mobile: 140 },
-  { date: "2024-06-06", desktop: 294, mobile: 250 },
-  { date: "2024-06-07", desktop: 323, mobile: 370 },
-  { date: "2024-06-08", desktop: 385, mobile: 320 },
-  { date: "2024-06-09", desktop: 438, mobile: 480 },
-  { date: "2024-06-10", desktop: 155, mobile: 200 },
-  { date: "2024-06-11", desktop: 92, mobile: 150 },
-  { date: "2024-06-12", desktop: 492, mobile: 420 },
-  { date: "2024-06-13", desktop: 81, mobile: 130 },
-  { date: "2024-06-14", desktop: 426, mobile: 380 },
-  { date: "2024-06-15", desktop: 307, mobile: 350 },
-  { date: "2024-06-16", desktop: 371, mobile: 310 },
-  { date: "2024-06-17", desktop: 475, mobile: 520 },
-  { date: "2024-06-18", desktop: 107, mobile: 170 },
-  { date: "2024-06-19", desktop: 341, mobile: 290 },
-  { date: "2024-06-20", desktop: 408, mobile: 450 },
-  { date: "2024-06-21", desktop: 169, mobile: 210 },
-  { date: "2024-06-22", desktop: 317, mobile: 270 },
-  { date: "2024-06-23", desktop: 480, mobile: 530 },
-  { date: "2024-06-24", desktop: 132, mobile: 180 },
-  { date: "2024-06-25", desktop: 141, mobile: 190 },
-  { date: "2024-06-26", desktop: 434, mobile: 380 },
-  { date: "2024-06-27", desktop: 448, mobile: 490 },
-  { date: "2024-06-28", desktop: 149, mobile: 200 },
-  { date: "2024-06-29", desktop: 103, mobile: 160 },
-  { date: "2024-06-30", desktop: 446, mobile: 400 },
+  { date: "2024-04-01", btc: 222, etc: 150 },
+  { date: "2024-04-02", btc: 97, etc: 180 },
+  { date: "2024-04-03", btc: 167, etc: 120 },
+  { date: "2024-04-04", btc: 242, etc: 260 },
+  { date: "2024-04-05", btc: 373, etc: 290 },
+  { date: "2024-04-06", btc: 301, etc: 340 },
+  { date: "2024-04-07", btc: 245, etc: 180 },
+  { date: "2024-04-08", btc: 409, etc: 320 },
+  { date: "2024-04-09", btc: 59, etc: 110 },
+  { date: "2024-04-10", btc: 261, etc: 190 },
+  { date: "2024-04-11", btc: 327, etc: 350 },
+  { date: "2024-04-12", btc: 292, etc: 210 },
+  { date: "2024-04-13", btc: 342, etc: 380 },
+  { date: "2024-04-14", btc: 137, etc: 220 },
+  { date: "2024-04-15", btc: 120, etc: 170 },
+  { date: "2024-04-16", btc: 138, etc: 190 },
+  { date: "2024-04-17", btc: 446, etc: 360 },
+  { date: "2024-04-18", btc: 364, etc: 410 },
+  { date: "2024-04-19", btc: 243, etc: 180 },
+  { date: "2024-04-20", btc: 89, etc: 150 },
+  { date: "2024-04-21", btc: 137, etc: 200 },
+  { date: "2024-04-22", btc: 224, etc: 170 },
+  { date: "2024-04-23", btc: 138, etc: 230 },
+  { date: "2024-04-24", btc: 387, etc: 290 },
+  { date: "2024-04-25", btc: 215, etc: 250 },
+  { date: "2024-04-26", btc: 75, etc: 130 },
+  { date: "2024-04-27", btc: 383, etc: 420 },
+  { date: "2024-04-28", btc: 122, etc: 180 },
+  { date: "2024-04-29", btc: 315, etc: 240 },
+  { date: "2024-04-30", btc: 454, etc: 380 },
+  { date: "2024-05-01", btc: 165, etc: 220 },
+  { date: "2024-05-02", btc: 293, etc: 310 },
+  { date: "2024-05-03", btc: 247, etc: 190 },
+  { date: "2024-05-04", btc: 385, etc: 420 },
+  { date: "2024-05-05", btc: 481, etc: 390 },
+  { date: "2024-05-06", btc: 498, etc: 520 },
+  { date: "2024-05-07", btc: 388, etc: 300 },
+  { date: "2024-05-08", btc: 149, etc: 210 },
+  { date: "2024-05-09", btc: 227, etc: 180 },
+  { date: "2024-05-10", btc: 293, etc: 330 },
+  { date: "2024-05-11", btc: 335, etc: 270 },
+  { date: "2024-05-12", btc: 197, etc: 240 },
+  { date: "2024-05-13", btc: 197, etc: 160 },
+  { date: "2024-05-14", btc: 448, etc: 490 },
+  { date: "2024-05-15", btc: 473, etc: 380 },
+  { date: "2024-05-16", btc: 338, etc: 400 },
+  { date: "2024-05-17", btc: 499, etc: 420 },
+  { date: "2024-05-18", btc: 315, etc: 350 },
+  { date: "2024-05-19", btc: 235, etc: 180 },
+  { date: "2024-05-20", btc: 177, etc: 230 },
+  { date: "2024-05-21", btc: 82, etc: 140 },
+  { date: "2024-05-22", btc: 81, etc: 120 },
+  { date: "2024-05-23", btc: 252, etc: 290 },
+  { date: "2024-05-24", btc: 294, etc: 220 },
+  { date: "2024-05-25", btc: 201, etc: 250 },
+  { date: "2024-05-26", btc: 213, etc: 170 },
+  { date: "2024-05-27", btc: 420, etc: 460 },
+  { date: "2024-05-28", btc: 233, etc: 190 },
+  { date: "2024-05-29", btc: 78, etc: 130 },
+  { date: "2024-05-30", btc: 340, etc: 280 },
+  { date: "2024-05-31", btc: 178, etc: 230 },
+  { date: "2024-06-01", btc: 178, etc: 200 },
+  { date: "2024-06-02", btc: 470, etc: 410 },
+  { date: "2024-06-03", btc: 103, etc: 160 },
+  { date: "2024-06-04", btc: 439, etc: 380 },
+  { date: "2024-06-05", btc: 88, etc: 140 },
+  { date: "2024-06-06", btc: 294, etc: 250 },
+  { date: "2024-06-07", btc: 323, etc: 370 },
+  { date: "2024-06-08", btc: 385, etc: 320 },
+  { date: "2024-06-09", btc: 438, etc: 480 },
+  { date: "2024-06-10", btc: 155, etc: 200 },
+  { date: "2024-06-11", btc: 92, etc: 150 },
+  { date: "2024-06-12", btc: 492, etc: 420 },
+  { date: "2024-06-13", btc: 81, etc: 130 },
+  { date: "2024-06-14", btc: 426, etc: 380 },
+  { date: "2024-06-15", btc: 307, etc: 350 },
+  { date: "2024-06-16", btc: 371, etc: 310 },
+  { date: "2024-06-17", btc: 475, etc: 520 },
+  { date: "2024-06-18", btc: 107, etc: 170 },
+  { date: "2024-06-19", btc: 341, etc: 290 },
+  { date: "2024-06-20", btc: 408, etc: 450 },
+  { date: "2024-06-21", btc: 169, etc: 210 },
+  { date: "2024-06-22", btc: 317, etc: 270 },
+  { date: "2024-06-23", btc: 480, etc: 530 },
+  { date: "2024-06-24", btc: 132, etc: 180 },
+  { date: "2024-06-25", btc: 141, etc: 190 },
+  { date: "2024-06-26", btc: 434, etc: 380 },
+  { date: "2024-06-27", btc: 448, etc: 490 },
+  { date: "2024-06-28", btc: 149, etc: 200 },
+  { date: "2024-06-29", btc: 103, etc: 160 },
+  { date: "2024-06-30", btc: 446, etc: 400 },
 ]
 
 const chartConfig = {
   visitors: {
     label: "Visitors",
   },
-  desktop: {
-    label: "Desktop",
-    color: "var(--chart-1)",
+  btc: {
+    label: "btc",
+    color: "fifth",
   },
-  mobile: {
-    label: "Mobile",
-    color: "var(--chart-2)",
+  etc: {
+    label: "etc",
+    color: "fourth",
   },
 } satisfies ChartConfig
 
@@ -147,12 +147,12 @@ export function ChartArea() {
   })
 
   return (
-    <Card className="pt-0">
+    <Card className="mt-24 p-6 mx-10 mb-2">
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1">
-          <CardTitle>Area Chart - Interactive</CardTitle>
+          <CardTitle>BTC VS ETC</CardTitle>
           <CardDescription>
-            Showing total visitors for the last 3 months
+            Showing total traders for the last 3 months
           </CardDescription>
         </div>
        
@@ -164,27 +164,27 @@ export function ChartArea() {
         >
           <AreaChart data={filteredData}>
             <defs>
-              <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fillbtc" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor="var(--color-desktop)"
+                  stopColor="var(--color-btc)"
                   stopOpacity={0.8}
                 />
                 <stop
                   offset="95%"
-                  stopColor="var(--color-desktop)"
+                  stopColor="var(--color-btc)"
                   stopOpacity={0.1}
                 />
               </linearGradient>a
-              <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="filletc" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-etc)"
                   stopOpacity={0.8}
                 />
                 <stop
                   offset="95%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-etc)"
                   stopOpacity={0.1}
                 />
               </linearGradient>
@@ -219,18 +219,16 @@ export function ChartArea() {
               }
             />
             <Area
-              dataKey="mobile"
+              dataKey="etc"
               type="natural"
-              fill="url(#fillMobile)"
-              stroke="var(--color-mobile)"
+              fill="url(#filletc)"
               stackId="a"
             />
             <Area
-              dataKey="desktop"
+              dataKey="btc"
               type="natural"
-              fill="url(#fillDesktop)"
-              stroke="var(--color-desktop)"
-              stackId="a"
+              fill="url(#fillbtc)"
+       stackId="a"
             />
             <ChartLegend content={<ChartLegendContent />} />
           </AreaChart>
