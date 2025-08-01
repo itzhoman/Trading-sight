@@ -222,13 +222,15 @@ export function ChartArea() {
               dataKey="etc"
               type="natural"
               fill="url(#filletc)"
+              stroke="fourth"
               stackId="a"
             />
             <Area
               dataKey="btc"
               type="natural"
               fill="url(#fillbtc)"
-       stackId="a"
+              stroke="fifith"
+              stackId="a"
             />
             <ChartLegend content={<ChartLegendContent />} />
           </AreaChart>
