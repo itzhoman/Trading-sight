@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { Mail, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 interface LinkItem {
   key: string
@@ -26,10 +26,10 @@ export const exploreMore: LinkItem[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  { key: 'linkedin', label: 'LinkedIn', url: '#', icon: <FaLinkedin /> },
-  { key: 'twitter', label: 'Twitter', url: '#', icon: <FaTwitter /> },
-  { key: 'instagram', label: 'Instagram', url: '#', icon: <FaInstagram /> },
-  { key: 'email', label: 'Email', url: '#', icon: <FaEnvelope /> },
+  { key: 'linkedin', label: 'LinkedIn', url: '#', icon: <Linkedin /> },
+  { key: 'twitter', label: 'Twitter', url: '#', icon: <Twitter /> },
+  { key: 'instagram', label: 'Instagram', url: '#', icon: <Instagram /> },
+  { key: 'email', label: 'Email', url: '#', icon: <Mail /> },
 ]
 
 
