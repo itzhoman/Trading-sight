@@ -35,7 +35,9 @@ const Navbar = () => {
       </div>
 
       <div className="md:hidden">
-        <button
+        <Button
+          variant='ghost'
+          size='icon'
           onClick={toggleMenu}
           className="text-third hover:text-fifth transition-colors"
         >
@@ -61,7 +63,7 @@ const Navbar = () => {
               />
             )}
           </svg>
-        </button>
+        </Button>
       </div>
 
       {isMenuOpen && (
