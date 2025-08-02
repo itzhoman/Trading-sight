@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Trading Sight",
   description: "Change your vision with trading sight",
   icons: {
-    icon: "/favicon.ico",
+    icon: "./favicon.ico",
   },
 };
 

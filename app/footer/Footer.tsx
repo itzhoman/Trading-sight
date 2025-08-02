@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaEnvelope, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 interface LinkItem {
@@ -7,7 +8,7 @@ interface LinkItem {
 }
 
 interface SocialLink extends LinkItem {
-  icon: JSX.Element
+  icon: React.ReactNode
 }
 
 export const quickLinks: LinkItem[] = [
@@ -25,10 +26,10 @@ export const exploreMore: LinkItem[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  { key: 'linkedin', label: 'LinkedIn', url: '#', icon: <FaLinkedin className="text-2xl" /> },
-  { key: 'twitter', label: 'Twitter', url: '#', icon: <FaTwitter className="text-2xl" /> },
-  { key: 'instagram', label: 'Instagram', url: '#', icon: <FaInstagram className="text-2xl" /> },
-  { key: 'email', label: 'Email', url: '#', icon: <FaEnvelope className="text-2xl" /> },
+  { key: 'linkedin', label: 'LinkedIn', url: '#', icon: <FaLinkedin /> },
+  { key: 'twitter', label: 'Twitter', url: '#', icon: <FaTwitter /> },
+  { key: 'instagram', label: 'Instagram', url: '#', icon: <FaInstagram /> },
+  { key: 'email', label: 'Email', url: '#', icon: <FaEnvelope /> },
 ]
 
 

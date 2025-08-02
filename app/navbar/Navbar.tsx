@@ -67,7 +67,7 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="absolute top-[70px] left-0 right-0 bg-fourth md:hidden">
+        <div className="absolute top-[70px] left-0 right-0  md:hidden bg-primary">
           <div className="flex flex-col justify-center items-center px-4 py-4 space-y-4">
             {NavbarItems.map((item) => (
               <a 
