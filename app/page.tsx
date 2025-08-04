@@ -1,6 +1,6 @@
 import { ChartArea } from "@/components/charts/ChartAerea";
 import Charts from "./chrts/ChartSection";
-import { Futures } from "./furures/Futures";
+import { Futures } from "./futures/Futures";
 import Hero from "./hero/Hero";
 import Navbar from "./navbar/Navbar";
 import TopPerformingStocks from "./top-stocks/TopPerformingStocks";
