@@ -1,6 +1,6 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, XAxis, ResponsiveContainer } from "recharts"
 
 import {
   Card,
@@ -33,32 +33,32 @@ const chartConfig = {
 
 export function BarCharts() {
   return (
-    <Card className="">
-      <CardHeader>
-        <CardDescription>January - June 2024</CardDescription>
+    <Card className="w-full max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1100px] h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] flex flex-col mx-auto">
+      <CardHeader className="pb-6">
+        <CardDescription className="text-sm lg:text-base xl:text-lg">January - June 2024</CardDescription>
       </CardHeader>
-      <CardContent className="">
-        <ChartContainer config={chartConfig} className="h-full">
-          <BarChart
-            accessibilityLayer
-            data={chartData}
-            width={350}
-            height={250}
-          >
-            <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              tickMargin={10}
-              axisLine={false}
-              tickFormatter={(value) => value.slice(0, 3)}
-            />
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
-            <Bar dataKey="desktop" radius={15} />
-          </BarChart>
+      <CardContent className="flex-1 p-0">
+        <ChartContainer config={chartConfig} className="w-full h-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              accessibilityLayer
+              data={chartData}
+            >
+              <CartesianGrid vertical={false} />
+              <XAxis
+                dataKey="month"
+                tickLine={false}
+                tickMargin={15}
+                axisLine={false}
+                tickFormatter={(value) => value.slice(0, 3)}
+              />
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent hideLabel />}
+              />
+              <Bar dataKey="desktop" radius={15} />
+            </BarChart>
+          </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
     </Card>

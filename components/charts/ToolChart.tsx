@@ -1,6 +1,6 @@
 "use client"
 
-import { Bar, BarChart, XAxis } from "recharts"
+import { Bar, BarChart, XAxis, ResponsiveContainer } from "recharts"
 
 import {
   Card,
@@ -39,54 +39,56 @@ const chartConfig = {
 
 export function ToolChart() {
   return (
-    <Card className="w-full max-w-[700px] h-[360px] flex flex-col">
-      <CardHeader>
-        <CardTitle>Trading Volume - BTC vs ETH</CardTitle>
+    <Card className="w-full max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1100px] h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] flex flex-col mx-auto mt-24">
+      <CardHeader className="pb-6">
+        <CardTitle className="text-lg lg:text-xl xl:text-2xl">Trading Volume - BTC vs ETH</CardTitle>
       </CardHeader>
-      <CardContent className="flex-1">
+      <CardContent className="flex-1 p-0">
         <ChartContainer config={chartConfig} className="w-full h-full">
-          <BarChart data={chartData} width={700} height={250}>
-            <XAxis
-              dataKey="date"
-              tickLine={false}
-              tickMargin={10}
-              axisLine={false}
-              tickFormatter={(value) =>
-                new Date(value).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                })
-              }
-            />
-            <Bar
-              dataKey="btc"
-              stackId="a"
-              fill="#000000"
-              radius={[0, 0, 4, 4]}
-            />
-            <Bar
-              dataKey="eth"
-              stackId="a"
-              fill="#8F8F8F"
-              radius={[4, 4, 0, 0]}
-            />
-            <ChartTooltip
-              content={
-                <ChartTooltipContent
-                  labelFormatter={(value) =>
-                    new Date(value).toLocaleDateString("en-US", {
-                      weekday: "long",
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })
-                  }
-                />
-              }
-              cursor={false}
-              defaultIndex={1}
-            />
-          </BarChart>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={chartData}>
+              <XAxis
+                dataKey="date"
+                tickLine={false}
+                tickMargin={15}
+                axisLine={false}
+                tickFormatter={(value) =>
+                  new Date(value).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                  })
+                }
+              />
+              <Bar
+                dataKey="btc"
+                stackId="a"
+                fill="#000000"
+                radius={[0, 0, 4, 4]}
+              />
+              <Bar
+                dataKey="eth"
+                stackId="a"
+                fill="#8F8F8F"
+                radius={[4, 4, 0, 0]}
+              />
+              <ChartTooltip
+                content={
+                  <ChartTooltipContent
+                    labelFormatter={(value) =>
+                      new Date(value).toLocaleDateString("en-US", {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })
+                    }
+                  />
+                }
+                cursor={false}
+                defaultIndex={1}
+              />
+            </BarChart>
+          </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
     </Card>

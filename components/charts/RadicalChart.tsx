@@ -1,6 +1,6 @@
 "use client"
 
-import { PolarGrid, RadialBar, RadialBarChart } from "recharts"
+import { PolarGrid, RadialBar, RadialBarChart, ResponsiveContainer } from "recharts"
 
 import {
   Card,
@@ -51,29 +51,29 @@ const chartConfig = {
 
 export function RadiCalChart() {
   return (
-    <Card className="w-full max-w-[700px] h-[360px] flex flex-col">
-      <CardHeader className="items-center pb-0">
-        <CardDescription>January - June 2024</CardDescription>
+    <Card className="w-full max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1100px] h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] flex flex-col mx-auto mt-24">
+      <CardHeader className="items-center pb-6">
+        <CardDescription className="text-sm lg:text-base xl:text-lg">January - June 2024</CardDescription>
       </CardHeader>
-      <CardContent className="flex-1 pb-0">
+      <CardContent className="flex-1 p-0">
         <ChartContainer
           config={chartConfig}
           className="w-full h-full"
         >
-          <RadialBarChart
-            data={chartData}
-            innerRadius={30}
-            outerRadius={100}
-            width={700}
-            height={250}
-          >
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel nameKey="browser" />}
-            />
-            <PolarGrid gridType="circle" />
-            <RadialBar dataKey="traders" />
-          </RadialBarChart>
+          <ResponsiveContainer width="100%" height="100%">
+            <RadialBarChart
+              data={chartData}
+              innerRadius="35%"
+              outerRadius="75%"
+            >
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent hideLabel nameKey="browser" />}
+              />
+              <PolarGrid gridType="circle" />
+              <RadialBar dataKey="traders" />
+            </RadialBarChart>
+          </ResponsiveContainer>
         </ChartContainer>
       </CardContent>
     </Card>
