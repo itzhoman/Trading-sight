@@ -147,7 +147,7 @@ export function ChartArea() {
   })
 
   return (
-    <Card className="w-full max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1100px] h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] flex flex-col mx-auto">
+    <Card className="pt-0">
       <CardHeader className="flex items-center gap-4 space-y-0 border-b py-6 sm:flex-row">
         <div className="grid flex-1 gap-2">
           <CardTitle className="text-lg lg:text-xl xl:text-2xl">BTC VS ETC</CardTitle>
@@ -155,12 +155,11 @@ export function ChartArea() {
             Showing total traders for the last 3 months
           </CardDescription>
         </div>
-       
       </CardHeader>
-      <CardContent className="flex-1 p-0">
+      <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
         <ChartContainer
           config={chartConfig}
-          className="w-full h-full"
+          className="aspect-auto h-[250px] w-full"
         >
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart data={filteredData}>
