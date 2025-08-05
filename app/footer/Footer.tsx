@@ -40,9 +40,7 @@ const Footer = () => {
       className="w-full text-third  flex flex-col justify-center relative items-center 
         bg-gradient-background  overflow-hidden"
     >
- 
-
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-10 mt-25 relative z-10">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-10 mt-16 relative z-10">
         {/* Brand Section */}
         <div className="sm:col-span-1 flex flex-col items-center sm:items-start">
           <div className="mb-4 text-xl font-extrabold tracking-widest hover:text-[#A4A4A4] transition-colors duration-300">
