@@ -1,4 +1,3 @@
-
 'use client'
 import { useRef, useEffect } from "react"
 import gsap from "gsap"
@@ -36,11 +35,10 @@ const TopPerformingStocks: React.FC = () => {
     return (
         <div className='mt-6 relative w-full bg-gradient-background text-[var(--color-text-primary)] overflow-hidden'>
 
-            {/* Background decorative elements */}
-            <div className='absolute top-0 left-0 w-full h-full'>
-                <div className='absolute top left-20 w-72 h-72 lg:w-96 lg:h-96 bg-[var(--color-primary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob'></div>
-                <div className='absolute top-40 right-20 w-72 h-72 lg:w-96 lg:h-96 bg-[var(--color-primary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000'></div>
-                <div className='absolute bottom-20 left-40 w-72 h-72 lg:w-96 lg:h-96 bg-[var(--color-secondary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000'></div>
+            <div className='absolute top-0 left-0 w-full h-full pointer-events-none'>
+                <div className='absolute top left-8 w-40 h-40 md:left-20 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-[var(--color-primary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob'></div>
+                <div className='absolute top-32 right-8 w-40 h-40 md:right-20 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-[var(--color-primary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000'></div>
+                <div className='absolute bottom-8 left-16 w-40 h-40 md:left-40 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-[var(--color-secondary)] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000'></div>
             </div>
 
             <div className='container mx-auto px-4 lg:px-8 z-10 relative'>
